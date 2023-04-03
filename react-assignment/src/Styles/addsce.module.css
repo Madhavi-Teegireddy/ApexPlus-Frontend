@@ -1,0 +1,10 @@
+.container{
+    /* padding: 1rem; */
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    left: 20vw;
+    top: 0;
+    background-color: black;
+    color: white;
+}
