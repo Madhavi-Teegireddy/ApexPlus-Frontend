@@ -19,35 +19,11 @@ const AddVehicle = () => {
      
   const {sce_name, name, pos_x, pos_y, speed, direction} = formValue
 
-//     const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     if (!sce_name, !name, !pos_x, !pos_y, !speed, !direction) {
-//         alert("Please select All Fields");
-//     } else {
-//         axios.post("http://localhost:3001/vehicle", {
-//         sce_name,
-//         name,
-//         pos_x,
-//         pos_y,
-//         speed,
-//         direction          
-//         })
-//         .then(res => {
-//             console.log("Posting Data", res);
-//             alert("Vehicle data Added Successfully");
-
-//             window.location.reload()
-//         })
-//         .catch(err => {
-//             console.log(err);
-//             alert("Something went wrong");
-//         });
-//     }
-// }
 
 const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!sce_name || sce_name === "Select Scenerio"|| !name || !pos_x || !pos_y || !speed || !direction || direction === "Select Direction") {
+    if (!sce_name || sce_name === "Select Scenerio"|| !name || !pos_x || !pos_y || !speed || 
+    !direction || direction === "Select Direction") {
         alert("Please select All Fields");
     } else if (name.trim() === "") {
         alert("Vehicle Name cannot be empty");
