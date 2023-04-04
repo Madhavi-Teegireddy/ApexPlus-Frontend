@@ -1,5 +1,4 @@
 .cont{
-    /* padding: 1rem; */
     width: 80vw;
     height: 100vh;
     position: absolute;
@@ -10,7 +9,6 @@
 }
 
 .outcontent{
-    /* border:1px solid red; */
     margin: auto;
     margin-top: 100px;
     width:80%;
@@ -33,7 +31,7 @@
 
 .container {
     width: auto;
-    height:auto;
+    height:130px;
     background-color: gray;
     padding: 25px 30px;
     border-radius: 5px;
@@ -181,8 +179,7 @@ form .button input:hover {
     display: flex;
     /* border:2px solid red; */
     justify-content: flex-start;
-    margin-top: 20px;
-    margin-left: 110px;
+    margin-top: 100px;
     justify-content: space-around;
 }
 
