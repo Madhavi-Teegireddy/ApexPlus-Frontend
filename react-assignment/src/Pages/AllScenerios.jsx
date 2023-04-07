@@ -42,7 +42,7 @@ const AllScenerios = () => {
         <div className={style.outcontent}>
           <div className={style.section}>
             <div>All Scenarios</div>
-            <div>
+            <div> 
               <button style={{backgroundColor: "blue"}}>
                 <NavLink to="/addscenerio" style={{color:"white", textDecoration:"none"}}>New Scenario</NavLink>
               </button>
