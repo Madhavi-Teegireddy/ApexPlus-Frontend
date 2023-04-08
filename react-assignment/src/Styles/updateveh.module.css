@@ -1,4 +1,4 @@
-.cont{
+.cont {
     width: 80vw;
     height: 100vh;
     position: absolute;
@@ -8,35 +8,35 @@
     color: white;
 }
 
-.outcontent{
+.outcontent {
     margin: auto;
     margin-top: 100px;
-    width:80%;
-    height:auto;
+    width: 80%;
+    height: auto;
 }
 
-.heading{
+.heading {
     text-align: left;
-    color:lightgray;
+    color: lightgray;
 }
 
-.content{
-    width:100%;
-    height:auto;
+.content {
+    width: 100%;
+    height: auto;
     /* border:1px solid teal; */
     margin: auto;
 }
 
-.updat{
-    width:auto;
+.updat {
+    width: auto;
     background-color: green;
-    border:none
+    border: none
 }
 
 .container {
     width: auto;
-    height:130px;
-    background-color:rgb(53, 49, 49);
+    height: auto;
+    background-color: rgb(53, 49, 49);
     padding: 25px 30px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -88,8 +88,9 @@ form .box span.details {
     border-bottom-width: 2px;
     transition: all 0.3s ease;
 }
-input{
-    background-color:#6b6262;
+
+input {
+    background-color: #6b6262;
 }
 
 .details .box input:focus,
@@ -116,8 +117,8 @@ form .category label {
 }
 
 
-.box label{
-    color:white;
+.box label {
+    color: white;
     font-weight: 600;
 }
 
@@ -179,10 +180,10 @@ form .button input:hover {
     }
 }
 
-.btn{
-    width:30%;
+.btn {
+    width: 30%;
     display: flex;
-    height:35px;
+    height: 35px;
     display: flex;
     /* border:2px solid red; */
     justify-content: flex-start;
@@ -190,9 +191,8 @@ form .button input:hover {
     justify-content: space-around;
 }
 
-.btn button{
-    padding:10px;
-    border:none;
+.btn button {
+    padding: 10px;
+    border: none;
     border-radius: 5px;
 }
-

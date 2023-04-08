@@ -10,7 +10,7 @@ import { MdModeEdit } from "react-icons/md"
 
 const AllScenerios = () => {
   const [data, setData] = useState([]);
-
+  
   useEffect(() => {
     async function fetchData() {
       try {
@@ -35,6 +35,17 @@ const AllScenerios = () => {
     .catch((err) => console.log(err));
 };
 
+  const handleDeleteAll = () => {
+    axios.delete(`http://localhost:3001/scenario`)
+      .then((res) => {
+        console.log("Deleted all scenarios", res);
+        setData([]);
+        alert("All scenarios deleted");
+      })
+      .catch((err) => console.log(err));
+  };
+
+
   return (
     <>
       <SideNavbar/>
@@ -49,7 +60,7 @@ const AllScenerios = () => {
               <button style={{backgroundColor: "green"}}>
                 <NavLink to="/addvehicle" style={{color:"white", textDecoration:"none"}}>Add Vehicle</NavLink>
               </button>
-              <button style={{backgroundColor: "orange"}}>Delete All</button>
+              <button style={{backgroundColor: "orange"}} onClick={handleDeleteAll}>Delete All</button>
             </div>
           </div>
           <table>
@@ -71,7 +82,8 @@ const AllScenerios = () => {
                   <td>{e.time}s</td>
                   <td style={{color:"black", fontSize:"20px"}}>
                     <NavLink to="/addvehicle" style={{color:"black", textDecoration:"none"}}> <IoAddCircleSharp/> </NavLink></td>
-                  <td style={{color:"black", fontSize:"20px"}}><MdModeEdit/></td>
+                  <td style={{color:"black", fontSize:"20px"}}>
+                    <Link to={`update/${e.id}`} style={{color:"black", textDecoration:"none"}}><MdModeEdit/></Link></td>
                   <td style={{color:"black", fontSize:"20px"}} onClick={() => handleDelete(e.id)}><RiDeleteBin5Fill/></td>
                 </tr>
               ))}
@@ -84,3 +96,6 @@ const AllScenerios = () => {
 }
 
 export default AllScenerios;
+
+
+
