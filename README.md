@@ -1,13 +1,19 @@
 # ApexPlus-Frontend
-Apex plus assignment
 
 
-🔗Live Link:https://madhavi-panorbit-assignment.netlify.app/ </br></br>
-This frontend application allows users to view a comprehensive list of all users. By clicking on a user's name, you can access a detailed page that shows their personal information, including their name, email address, phone number, and location. The app provides a seamless user experience, allowing you to easily browse through all user profiles and find the information you need.
+🔗Live Link:https://frontend-apexplus.netlify.app/ </br></br>
+This is a React application that allows you to create, display, update, and delete scenarios and vehicles. A scenario can have multiple vehicles, and vehicles can be moved based on their direction and speed. The application uses a JSON server to store and retrieve data.
 </br></br>
 
+#Features -
+- Create, read, update, and delete scenarios
+- Create, read, update, and delete vehicles
+
 # Tech Stacks used -
-- React:
+- React.js
+- React Router for routing
+- CSS for styling
+- JSON server for data storage
 
 ## Dependencies:
 - react
@@ -18,29 +24,32 @@ This frontend application allows users to view a comprehensive list of all users
 - react-icons
 - axios
 
+# Setup
+To run this application on your local machine, follow these steps:
+
+- Clone this repository to your local machine using git clone https://github.com/your-username/your-repo.git
+- Navigate to the project directory using cd react-scenario-vehicle-simulator
+- Install the dependencies using npm install
+- Start the JSON server using npm run server
+- In a new terminal window, start the development server using npm start
+- Open http://localhost:3000 to view the app in the browser.
+
 # Features of this Frontend Application -
-# Landing Page
-- The landing page of this frontend application showcases the names of all registered users for easy access.</br></br>
-![la](https://user-images.githubusercontent.com/107460617/229419023-55cd0aa8-fbd4-471a-aa01-c391aebb26e0.PNG)</br></br></br></br>
-
-
 # Home Page
-- By clicking on any user's name in the landing page, the user is redirected to the homepage where they can view detailed information about the selected user, such as their name, email address, and phone number.
-</br></br>
-![ho](https://user-images.githubusercontent.com/107460617/229419588-9264e8a5-1f5c-4082-b8e2-ac0d615cff8f.PNG)
-</br></br>
-
-# Post, Gallery, and Todo Pages
-- The frontend application indicates that the Post, Gallery, and Todo pages are "coming soon" and encourages users to check back later for updates.</br></br>
+- The landing page of this frontend application showcases the details of all vehicles.</br></br>
+![1](https://user-images.githubusercontent.com/107460617/230732603-e4af7157-ce29-4695-9f7c-d62a8ab065fa.PNG)</br></br></br></br>
 
 
- 
-![po](https://user-images.githubusercontent.com/107460617/229419798-a4858e2c-fd81-41e6-99cb-4628e5748bdd.PNG)
+# Add Scenerio and All Scenerios page
+![2](https://user-images.githubusercontent.com/107460617/230732665-d4382f9d-703e-458f-a171-665d3c5fcd0b.PNG)
+![3](https://user-images.githubusercontent.com/107460617/230732671-a6298a2a-595e-4c07-aca2-5b348d0502c0.PNG)
 
 </br></br>
 
-- By clicking on signout button user will be redirected to landingpage.
-![si](https://user-images.githubusercontent.com/107460617/229419846-9b83e866-b044-46ee-bdfb-c817428ffa14.PNG)
+# Add Vehicle, All Vehicle and Update vehicle.
+![4](https://user-images.githubusercontent.com/107460617/230732705-08fe29ba-15f4-4fb8-8482-382fd9a69f22.PNG)
+![5](https://user-images.githubusercontent.com/107460617/230732711-725892e2-4e0a-4909-bf78-923c5eecc8f7.PNG)
+</br></br>
 
 
 
